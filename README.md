@@ -278,7 +278,7 @@ El refreh token también se almacenará en una cookie segura:
 
 ```javascript
 res.cookie('refreshToken', refreshToken, { 
-      httpOnly: false, // No accesible por JavaScript
+      httpOnly: true, // No accesible por JavaScript
       secure: false,
       sameSite: 'Strict',
       maxAge: 604800000, // 7 días
@@ -392,7 +392,7 @@ try {
         );
         console.log("Guardando cookie...")
         res.cookie('token', newToken, {
-          httpOnly: false,
+          httpOnly: true,
           secure: false,
           sameSite: 'Lax',
           maxAge:   60 * 60 * 1000,
