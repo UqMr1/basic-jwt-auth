@@ -115,7 +115,7 @@ Define una ruta que responde a solicitudes POST en la URL '/register'.
 ```javascript
   app.post('/register', async (req, res) => {...})
 ```
-Captura los datos con las etiqueta email y password enviadas a través de la petición POST desde el formulario:
+Captura los datos con las etiquetas email y password enviadas a través de la petición POST desde el formulario:
 
 ```javascript
   try {
